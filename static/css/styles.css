@@ -1,0 +1,349 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* ------------------- Header ------------------- */
+#header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  background: #3C2C54;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ffffff44; /* semi-transparent white border */
+  margin-bottom: 0;
+}
+
+/* Logo and heading */
+.logo-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-heading img {
+  height: 68px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff; 
+  font-family: 'Comfortaa', cursive;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ------------------- Navigation ------------------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffffcc; /* soft white */
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #ffffffaa; /* lighter hover */
+  color: #3C2C54; /* ocean blue */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------------- Background/Main Section ------------------- */
+
+#Main-content {
+  background: #F5F5DC;
+  min-height: 100vh;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* ------------------- Intro Hero Section ------------------- */
+
+.intro-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+  color: #2F4F4F;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+a.start-btn{
+  padding-top: 10px;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color:#2F4F4F;
+  margin: 15px 0 30px;
+  text-align: center;
+}
+
+.extras {
+  margin-top: 55px;
+  margin-bottom: 0%;
+  font-size: 1rem;
+  color:#2F4F4F;
+  line-height: 1.6;
+  opacity: 0.95;
+  text-align: center;
+}
+
+/* ------------------- Hero Section -------------------*/
+.hero-section {
+  background-color: #F5F5DC;
+  text-align: center;
+}
+
+.couch-container h1{
+  font-family: 'Pacifico', cursive; 
+}
+
+.couch-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  gap: 50px; 
+  flex-wrap: wrap; 
+  padding: 50px 30px 20px;
+}
+
+.couch-img:hover{
+  transform: scale(1.05);
+}
+
+.couch-img {
+  width: 47%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-title {
+  font-family: 'FriendsFont', sans-serif;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.logo-dots {
+  letter-spacing: 6px;
+}
+
+.dot1{
+  color: red;
+  margin: 0 2px;
+}
+
+.dot2{
+  color: blue;
+  margin: 0 2px;
+}
+
+.start-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1 rem;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 45%
+}
+
+.start-btn:hover, .cta-button:hover {
+  background-color: #FF0000;
+  transform: scale(1.05);
+}
+
+/* ------------------- How It Works - Steps ------------------- */
+#how-it-works{
+  background-color: #F5F5DC;
+}
+
+.how-box {
+  margin: 0px;
+  padding: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+
+.how-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #006d77; /* teal */
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+/* Step Cards */
+.step-card {
+  background: rgba(207, 90, 217, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  width: 220px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  background-color: yellow;
+}
+
+/* Step Number */
+.step-card span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00b4d8; /* bright blue */
+  margin-right: 8px;
+ 
+}
+
+/* Step Title */
+.step-card strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #0077b6; /* ocean blue */
+  margin-bottom: 6px;
+}
+
+/* Step Description */
+.step-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #023047; /* dark blue */
+}
+
+#invite-section {
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  /* width: 20%; */
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.invite-box h2 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.5rem;
+  color: #ff4d6d;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.invite-box p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: blue;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 45%;
+}
+
+/* Updated About + Contact Styling */
+#about-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 20px;
+  background: #F5F5DC; 
+}
+
+.info-box {
+  width: 90%;
+  max-width: 700px;
+  background: #ffffffcc; 
+  padding: 25px 30px;
+  border-radius: 20px;
+}
+
+.info-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.info-box h2 {
+  font-size: 2.3rem;
+  color: #3C2C54;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.info-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2F4F4F;
+  margin: 10px 0;
+  font-weight: 500;
+}
+ 
+.footer {
+  background-color: #3C2C54;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f3e5f5;
+}
+
+.footer-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #f3e5f5;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+}

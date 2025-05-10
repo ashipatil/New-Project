@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', cursive;
+      background: #F5F5DC;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: #3C2C54;
+      margin-bottom: 30px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+      font-size: 1rem;
+    }
+    .cta-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3C2C54;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-left: 42%;
+    }
+
+    button:hover {
+      background-color: #5a3d7a;
+    }
+    .switch {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    .switch a {
+      color: #3C2C54;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .switch a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Register</h2>
+    <form action="#">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <a href="login.html" class="cta-button">register</a>
+      
+    </form>
+  </div>
+
+</body>
+</html>
